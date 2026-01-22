@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Ti ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+    }
+    .card {
+      background: rgba(0,0,0,0.25);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 320px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      background: #fff;
+      color: #ff4d6d;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ffe3ea;
+    }
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hola, amor ❤️</h1>
+    <p>Toca el botón…</p>
+    <button onclick="mostrarMensaje()">Ábreme</button>
+    <div id="mensaje" class="hidden">
+      <p>
+        Solo quería decirte que eres la persona más especial de mi vida.
+        Gracias por existir y por hacerme tan feliz. 💖
+      </p>
+      <p>Con amor, Raúl 🫶</p>
+    </div>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
